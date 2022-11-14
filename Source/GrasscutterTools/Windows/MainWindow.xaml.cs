@@ -101,11 +101,11 @@ namespace GrasscutterTools.Windows
             }
             else if (btn == RadCustom)
             {
-
+                page = new PageCustom();
             }
             else if (btn == RadArtifact)
             {
-
+                page = new PageArtifact();
             }
             else if (btn == RadGive)
             {
@@ -113,15 +113,15 @@ namespace GrasscutterTools.Windows
             }
             else if (btn == RadSpawn)
             {
-
+                page = new PageSpawn();
             }
             else if (btn == RadQuests)
             {
-
+                page = new PageQuests();
             }
             else if (btn == RadStats)
             {
-
+                page = new PageStats();
             }
             else if (btn == RadTools)
             {
@@ -129,23 +129,23 @@ namespace GrasscutterTools.Windows
             }
             else if (btn == RadScenes)
             {
-
+                page = new PageScenes();
             }
             else if (btn == RadManage)
             {
-
+                page = new PageManage();
             }
             else if (btn == RadOpenCommand)
             {
-
+                page = new PageOpenCommand();
             }
             else if (btn == RadAbout)
             {
-
+                page = new PageAbout();
             }
             else if (btn == RadSettings)
             {
-
+                page = new PageSettings();
             }
             else
             {

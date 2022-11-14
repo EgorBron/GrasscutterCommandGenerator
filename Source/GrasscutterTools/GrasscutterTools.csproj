@@ -83,8 +83,38 @@
     <Compile Include="Models\GameItem.cs" />
     <Compile Include="Models\GameItems.cs" />
     <Compile Include="OpenCommand\OpenCommandAPI.cs" />
+    <Compile Include="Pages\PageAbout.xaml.cs">
+      <DependentUpon>PageAbout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageArtifact.xaml.cs">
+      <DependentUpon>PageArtifact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageCustom.xaml.cs">
+      <DependentUpon>PageCustom.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageGive.xaml.cs">
       <DependentUpon>PageGive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageManage.xaml.cs">
+      <DependentUpon>PageManage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageOpenCommand.xaml.cs">
+      <DependentUpon>PageOpenCommand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageQuests.xaml.cs">
+      <DependentUpon>PageQuests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageScenes.xaml.cs">
+      <DependentUpon>PageScenes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSettings.xaml.cs">
+      <DependentUpon>PageSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSpawn.xaml.cs">
+      <DependentUpon>PageSpawn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageStats.xaml.cs">
+      <DependentUpon>PageStats.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageTools.xaml.cs">
       <DependentUpon>PageTools.xaml</DependentUpon>
@@ -100,7 +130,47 @@
     <Compile Include="Utils\ArtifactUtils.cs" />
     <Compile Include="Utils\HttpHelper.cs" />
     <Compile Include="Utils\ReleaseAPI.cs" />
+    <Page Include="Pages\PageAbout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageArtifact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageCustom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageGive.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageManage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageOpenCommand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageQuests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageScenes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageSpawn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageStats.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

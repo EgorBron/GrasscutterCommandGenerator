@@ -75,7 +75,7 @@
                     <RadioButton
                         x:Name="RadHome"
                         Content="Home"
-                        Style="{StaticResource MenuItemStyle}" />
+                        Style="{StaticResource MenuItemStyle}" Cursor="Hand" />
                     <RadioButton
                         x:Name="RadCustom"
                         Content="Custom"
