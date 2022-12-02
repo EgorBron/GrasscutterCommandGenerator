@@ -14,8 +14,9 @@
  *
  *  You should have received a copy of the GNU Affero General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * 
+ *
  **/
+
 using System;
 using System.Windows.Forms;
 
@@ -44,7 +45,7 @@ namespace GrasscutterTools
         /// </summary>
         /// <param name="form">加载语言的窗口</param>
         /// <param name="formType">窗口的类型</param>
-        public static void LoadLanguage(Form form, Type formType)
+        public static void LoadLanguage(Control form, Type formType)
         {
             if (form != null)
             {
@@ -77,8 +78,15 @@ namespace GrasscutterTools
 
             foreach (Control c in control.Controls)
             {
-                resources.ApplyResources(c, c.Name);
-                Loading(c, resources);
+                if (c is UserControl uc)
+                {
+                    LoadLanguage(uc, uc.GetType());
+                }
+                else
+                {
+                    resources.ApplyResources(c, c.Name);
+                    Loading(c, resources);
+                }
             }
         }
 

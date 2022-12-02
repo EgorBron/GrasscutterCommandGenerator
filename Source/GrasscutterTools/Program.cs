@@ -14,10 +14,10 @@
  *
  *  You should have received a copy of the GNU Affero General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * 
+ *
  **/
+
 using System;
-using System.Globalization;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -77,6 +77,7 @@ namespace GrasscutterTools
                 MultiLanguage.SetDefaultLanguage(Settings.Default.DefaultLanguage);
 
             Application.Run(new Forms.FormMain());
+            Console.WriteLine("Program end.");
         }
 
         #region - 全局异常处理 -
@@ -84,12 +85,16 @@ namespace GrasscutterTools
         private static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {
             string str = GetExceptionMsg(e.Exception, e.ToString());
+            Console.WriteLine("Application_ThreadException");
+            Console.WriteLine(str);
             MessageBox.Show(str, Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             string str = GetExceptionMsg(e.ExceptionObject as Exception, e.ToString());
+            Console.WriteLine("CurrentDomain_UnhandledException");
+            Console.WriteLine(str);
             MessageBox.Show(str, Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

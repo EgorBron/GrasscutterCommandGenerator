@@ -80,7 +80,6 @@ namespace GrasscutterTools.Forms
         protected override void OnFormClosed(FormClosedEventArgs e)
         {
             Settings.Default.ShopJsonPath = TxtShopJsonPath.Text;
-            Settings.Default.Save();
 
             base.OnFormClosed(e);
         }
@@ -163,7 +162,6 @@ namespace GrasscutterTools.Forms
                 }
             }
             throw firstEx;
-
 
             //{
             //    try

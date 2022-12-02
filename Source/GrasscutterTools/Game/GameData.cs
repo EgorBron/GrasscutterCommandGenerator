@@ -14,8 +14,9 @@
  *
  *  You should have received a copy of the GNU Affero General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
- * 
+ *
  **/
+
 using GrasscutterTools.Properties;
 
 namespace GrasscutterTools.Game
@@ -34,6 +35,7 @@ namespace GrasscutterTools.Game
             Monsters = new ItemMapGroup(Resources.Monsters);
             Gadgets = new ItemMapGroup(Resources.Gadget);
             Scenes = new ItemMap(Resources.Scene);
+            Dungeons = new ItemMap(Resources.Dungeon);
             Weapons = new ItemMap(Resources.Weapon);
             WeaponColors = new ItemMap(Resources.WeaponColor);
             GachaBannerPrefabs = new ItemMap(Resources.GachaBennerPrefab);
@@ -41,7 +43,6 @@ namespace GrasscutterTools.Game
             Quests = new ItemMap(Resources.Quest);
             ShopType = new ItemMap(Resources.ShopType);
         }
-
 
         public static ItemMap Artifacts { get; private set; }
 
@@ -63,11 +64,14 @@ namespace GrasscutterTools.Game
 
         public static ItemMap Scenes { get; private set; }
 
+        public static ItemMap Dungeons { get; private set; }
+
         public static ItemMap Weapons { get; private set; }
 
         public static ItemMap WeaponColors { get; private set; }
 
         public static ItemMap GachaBannerPrefabs { get; private set; }
+
         public static ItemMap GachaBannerTitles { get; private set; }
 
         public static ItemMap Quests { get; private set; }

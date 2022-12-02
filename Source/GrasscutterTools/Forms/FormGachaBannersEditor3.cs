@@ -24,10 +24,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 
 using GrasscutterTools.Game;
-using GrasscutterTools.Game.Drop;
 using GrasscutterTools.Game.Gacha;
 using GrasscutterTools.Properties;
 
@@ -44,7 +42,7 @@ namespace GrasscutterTools.Forms
 
         private List<GachaBanner3> Banners;
 
-        #endregion
+        #endregion - 成员 -
 
         #region - 构造与窗体事件 -
 
@@ -83,6 +81,7 @@ namespace GrasscutterTools.Forms
             }
             catch (Exception ex)
             {
+                LoadBanners(Encoding.UTF8.GetString(Resources.Banners));
                 MessageBox.Show(ex.ToString(), Resources.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -91,7 +90,6 @@ namespace GrasscutterTools.Forms
         {
             // 保存文件路径
             Settings.Default.BannersJsonPath = TxtBannersJsonPath.Text;
-            Settings.Default.Save();
 
             base.OnFormClosed(e);
         }
@@ -106,10 +104,9 @@ namespace GrasscutterTools.Forms
             new FormGachaBannerEditor().ShowDialog();
         }
 
-        #endregion
+        #endregion - 构造与窗体事件 -
 
         #region - Banners.json 文件相关 -
-
 
         /// <summary>
         /// 加载按钮点击时触发
@@ -133,7 +130,10 @@ namespace GrasscutterTools.Forms
                         return;
                 }
 
-                LoadBanners(File.ReadAllText(path));
+                var content = File.ReadAllText(path);
+                if (string.IsNullOrEmpty(content))
+                    content = Encoding.UTF8.GetString(Resources.Banners);
+                LoadBanners(content);
                 MessageBox.Show("OK", Resources.Tips, MessageBoxButtons.OK);
             }
             catch (Exception ex)
@@ -175,7 +175,7 @@ namespace GrasscutterTools.Forms
             }
         }
 
-        #endregion
+        #endregion - Banners.json 文件相关 -
 
         #region - 卡池列表 -
 
@@ -255,7 +255,7 @@ namespace GrasscutterTools.Forms
             }
         }
 
-        #endregion
+        #endregion - 卡池列表 -
 
         #region - 卡池 -
 
@@ -498,8 +498,6 @@ namespace GrasscutterTools.Forms
             return banner;
         }
 
-
         #endregion - 卡池参数 -
-
     }
 }
