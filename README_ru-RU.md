@@ -3,6 +3,8 @@
 [![GitHub лицензия](https://img.shields.io/github/license/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/blob/main/LICENSE)
 [![GitHub звёзды](https://img.shields.io/github/stars/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/stargazers)
 [![Github ВСЕ выпуски](https://img.shields.io/github/downloads/jie65535/GrasscutterCommandGenerator/total.svg)](https://github.com/jie65535/GrasscutterCommandGenerator/releases)
+[![GitHub release](https://img.shields.io/github/v/release/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/releases/latest)
+[![Build](https://github.com/jie65535/GrasscutterCommandGenerator/actions/workflows/build.yml/badge.svg)](https://github.com/jie65535/GrasscutterCommandGenerator/actions/workflows/build.yml)
 
 [English](README.md) | [简体中文](README_zh-cn.md) | Русский - Перевод [Юрий Дворецкий](https://github.com/yurikenjx) (с исправлениями от [EgorBron](https://github.com/EgorBron)) 
 
@@ -15,6 +17,10 @@ GCG поддерживает 简体中文 (китайский упр.), 繁体�
 > **Warning**: вид приложения может отличаться от скриншотов. Также в нём могут присутствовать ошибки в переводе и отсутсвие некоторых ресурсов. **Мы приглашаем всех сделать вклад в их [улучшение](/Source/GrasscutterTools/Resources/ru-ru)**
 
 ## Лог обновлений
+
+### GrasscutterTools-v1.8
+![Task page](Doc/Screenshots-ru/18-TaskPage.png)
+
 ### GrasscutterTools-v1.7.3
 ![Улучшенный спавн](Doc/Screenshots-ru/5-Spawn.png)
 

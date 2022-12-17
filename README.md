@@ -3,6 +3,8 @@
 [![GitHub license](https://img.shields.io/github/license/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/stargazers)
 [![Github All Releases](https://img.shields.io/github/downloads/jie65535/GrasscutterCommandGenerator/total.svg)](https://github.com/jie65535/GrasscutterCommandGenerator/releases)
+[![GitHub release](https://img.shields.io/github/v/release/jie65535/GrasscutterCommandGenerator)](https://github.com/jie65535/GrasscutterCommandGenerator/releases/latest)
+[![Build](https://github.com/jie65535/GrasscutterCommandGenerator/actions/workflows/build.yml/badge.svg)](https://github.com/jie65535/GrasscutterCommandGenerator/actions/workflows/build.yml)
 [![QQ Group](https://pub.idqqimg.com/wpa/images/group.png)](https://qm.qq.com/cgi-bin/qm/qr?k=PdS9--b-n8LEAmYjX8fNFXtKDcsp4NHN&jump_from=webapi&authKey=7ty3ZCKYMKLGWLmO8O84qiNAZ0EuCnSGF+acP+74xuDMKYXXNjuPP7iUzffHz4r2)
 
 English | [简体中文](README_zh-cn.md) | [Русский](README_ru-RU.md)
@@ -16,6 +18,10 @@ Support 简体中文, 繁体中文, English and Русский languages.
 > **Warning**: app look may be different rather than on screenshots. It may also contain translation errors and a lack of certain resources. **We're welcome everyone to contribute to their [improvement](/Source/GrasscutterTools/Resources/en-us)**
 
 ## Update log
+
+### GrasscutterTools-v1.8
+![Task page](Doc/Screenshots-en/18-TaskPage.png)
+
 ### GrasscutterTools-v1.7.3
 ![Gadget](Doc/Screenshots-en/6-SpawnEntity.png)
 
