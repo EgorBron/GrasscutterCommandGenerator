@@ -305,6 +305,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormGachaBannerEditor.ru-ru.resx">
       <DependentUpon>FormGachaBannerEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormGachaBannerEditor.resx">
       <DependentUpon>FormGachaBannerEditor.cs</DependentUpon>
@@ -432,6 +433,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\PageHome.ru-RU.resx">
       <DependentUpon>PageHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\PageHome.zh-TW.resx">
       <DependentUpon>PageHome.cs</DependentUpon>
